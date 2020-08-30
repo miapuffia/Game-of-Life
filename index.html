@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Game of Life</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="http://miapuffia.com/scripts/prefix.min.js"></script>
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		
+		<div id="controlPanel">
+			<div id="sliderDiv">
+				<label for="slider">Time to step in ms:</label>
+				
+				<div id="innerSliderDiv">
+					<input type="range" id="slider" name="slider" min="1" max="1000" value="500">
+					
+					<div class="sliderticks">
+						<p>1</p>
+						<p>100</p>
+						<p>200</p>
+						<p>300</p>
+						<p>400</p>
+						<p>500</p>
+						<p>600</p>
+						<p>700</p>
+						<p>800</p>
+						<p>900</p>
+						<p>1000</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="buttonDiv">
+				<button id="start">Start</button>
+				
+				<button id="next">Next</button>
+				
+				<button id="clear">Clear</button>
+				
+				<button id="rules">What are the rules?</button>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
